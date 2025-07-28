@@ -17,7 +17,15 @@ function exerciseOfTheDay() {
 // The function should return an interpolated string like Each person gets 4.00 slices of pizza; from our 8-slice pizza x being 
 // a decimal in case there is no way to split the pizza evenly.
 
+function sharePizza(slices, people) {
+    const perPerson = (slices / people).toFixed(2);
+    console.log(`Each person gets ${perPerson} slices of pizza; from our ${slices} slice pizza`);
+}
 
+sharePizza(8, 2);
+sharePizza(8, 3);
+sharePizza(21, 20);
+sharePizza(10, 3);
 
 // HARD:
 // Inside a closure, create an object called PII (Personally Identifiable Information)that cannot be accessed directly. 
