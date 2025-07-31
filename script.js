@@ -55,7 +55,7 @@ function patient() {
     };
 
     function getName() {
-        return PII.name;
+        return PII.names;
     }
 
     function getSSN() {
