@@ -1,9 +1,9 @@
 /*-------------------- Google Font --------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /*-------------------- Color Variables --------------------*/
 :root {
-    --hue-color: 230; 
+    --hue-color: 230;
     --main-color: hsl(var(--hue-color), 71%, 61%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
@@ -18,7 +18,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -57,7 +58,7 @@ a {
     font-weight: 500;
 }
 
-.nav_logo{
+.nav_logo {
     color: var(--title-color);
 }
 
@@ -81,11 +82,27 @@ a {
 }
 
 /*-------------------- Main --------------------*/
+.main {
+    margin: 3rem 1.5rem 1.5rem;
+}
 
+.directions {
+    font-size: 1rem;
+    color: var(--main-color);
+}
+
+.difficulty {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.question {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
 
 /*-------------------- Footer --------------------*/
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: var(--main-color);
@@ -104,22 +121,37 @@ a {
 }
 
 .footer-title,
-.footer-subtitle{
+.footer-subtitle {
     color: white;
 }
 
 .footer-subtitle {
-    font-size: .875rem;
+    font-size: 0.875rem;
 }
 
 /*-------------------- Media Queries --------------------*/
 /* For tablet */
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .nav_logo {
         font-size: 1.5rem;
     }
     .nav_link {
         font-size: 1rem;
+    }
+
+    .directions {
+        font-size: 1.2rem;
+        color: var(--main-color);
+    }
+
+    .difficulty {
+        font-size: 1.2rem;
+        color: var(--title-color);
+    }
+
+    .question {
+        font-size: 1rem;
+        margin-bottom: 1rem;
     }
 
     .footer {
@@ -129,13 +161,27 @@ a {
     .footer-title {
         font-size: 1.4rem;
     }
-    
+
     .footer-subtitle {
         font-size: 1.1rem;
     }
 }
 
 /* For large devices */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
+    .directions {
+        font-size: 1.3rem;
+        color: var(--main-color);
+        margin-bottom: 0.5rem;
+    }
 
+    .difficulty {
+        font-size: 1.3rem;
+        color: var(--title-color);
+    }
+
+    .question {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
 }
